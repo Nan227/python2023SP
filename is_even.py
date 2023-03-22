@@ -38,6 +38,34 @@ def is_even2(values):
   #     values[i]=False
   #     # print(values[i])
   # return values[i]
-test = [5, 3, 2 ,1]
+test = [2, 4, 7 ,8]
 print(is_even(test))
-print(is_even2(test))
+#print(is_even2(test))
+
+def all_even(values): 
+  res = [] 
+  
+  for x in values:
+    res.append(x%2 == 0)
+  #return res
+    for i in range(len(res)):
+     
+      if i==False:
+        result= False
+        print(result)
+      else:
+        result = True
+        print(result)
+      return res
+  #print(res)
+
+print(all_even(test))
+
+# def all_odd(res): 
+#   for i in res:
+#     if i==False:
+#       result= True
+#     else:
+#       result = False
+#   return result
+# print(f"All numers are {result} the odd numbers")
