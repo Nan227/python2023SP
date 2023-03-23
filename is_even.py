@@ -24,6 +24,7 @@ def is_even(values):
     res.append(x%2 == 0)
   return res
 
+
 def is_even2(values):
   return [x %2 ==0 for x in values]
 
@@ -38,41 +39,38 @@ def is_even2(values):
   #     values[i]=False
   #     # print(values[i])
   # return values[i]
-test = [2, 4, 6 ,8]
+test = [1,3,8,7]
+print(test)
 print(is_even(test))
-#print(is_even2(test))
 
-def all_even(values): 
-  res = [] 
+#---------Check all even ?----------
+
+def all_even(values):
   
-  for x in values:
-    res.append(x%2 == 0)
-  #return res
-    for i in range(len(res)):
-      if i==False:
-        result= False
-        print(result)
-      else:
-        result = True
-        print(result)
-      return res
-  #print(res)
+  for num in values:
+    # checking condition
+    if num % 2 != 0:
+       return False
+  return True
+  
 print("Is all even number?")
-print(all_even(test))
+if (all_even(test)):
+  print("Yes, all number is even")
+else:
+  print("No, there are at least one of them is odd number")
+
+#-------Check all odd ?------------
 
 def all_odd(values): 
-  res = [] 
-  
-  for x in values:
-    res.append(x%2 == 0)
-  #return res
-    for i in range(len(res)):
-      if i==True:
-        result= False
-        print(result)
-      else:
-        result = True
-        print(result)
-      return res
+  for num in values:
+    # checking condition
+    if num % 2 == 0:
+       return False
+  return True
+
 print("Is all odd number?")
-print(all_odd(test)) 
+
+if (all_odd(test)):
+  print("YEs, all number is odd number")
+else:
+  print("No, at least one of them is even number")
