@@ -9,9 +9,9 @@ def is_even1(values):
   return[x %2 ==0 for x in values]
 #res[] # someting will go wrong
 def is_even2(values):
-  # global res
+  res = []
   print(f"DBG: init res ={res}")
-  for x in value:
+  for x in values:
     res.append(x % 2 == 0)
     #res = res +[ x% 2 ==0 => error]
   return res
