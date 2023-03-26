@@ -46,3 +46,10 @@ def any_even2(values):
     if x_even:
       return True
   return False
+
+def all_even(values):
+  for x in values:
+   # x_all_not_even = x%2 !=0
+    if x%2 !=0:
+      return False
+  return True

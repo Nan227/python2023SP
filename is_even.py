@@ -46,7 +46,6 @@ print(is_even(test))
 #---------Check all even ?----------
 
 def all_even(values):
-  
   for num in values:
     # checking condition
     if num % 2 != 0:
