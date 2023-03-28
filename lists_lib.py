@@ -47,9 +47,34 @@ def any_even2(values):
       return True
   return False
 
-def all_even(values):
+def all_even2(values):
   for x in values:
    # x_all_not_even = x%2 !=0
     if x%2 !=0:
       return False
   return True
+
+def all_even(values):
+  res=False
+  print(f"DEB: init res= {res}")
+  for x in values:
+    print(f"DEB: init res= {res} [x= {x}]")
+    if x%2 !=0:
+      print(f"DEB: init res= {res} [x= {x}]")
+      return False
+  return True
+
+def all_evenf(values):
+  res=False
+  print(f"DEB: init res= {res}")
+  for x in values:
+    if x%2 ==0:
+      res = True
+      print(f"DEB: init_end res= {res} [x= {x}]")
+    else:
+      res = False
+      print(f"DEB: init_end res= {res} [x= {x}]")
+      return False
+      
+      print(f"DEB: init_end res= {res} [x= {x}]")
+  return res
