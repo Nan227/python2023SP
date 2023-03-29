@@ -78,3 +78,21 @@ def all_evenf(values):
       
       print(f"DEB: init_end res= {res} [x= {x}]")
   return res
+
+def all_evenP(values):
+  res = True
+  for x in values:
+    res = res and (x%2 == 0)
+    print(f"DEB: init_end res= {res} [x= {x}]")
+  return res
+
+# primary next
+# ditionary 
+# jupitor
+def totalP(values):
+  if values == []:
+    res = 0
+  else:
+    res = totalP(values[:-1] + values[-1])
+  print(f"totalP({values}) --> {res}")
+  return res
