@@ -21,10 +21,8 @@ def prime_number3(n):
 print("Is prime number " )
 print( prime_number2(13))
 print(f"Is prime number prime_number2: {prime_number2(9)}")
-# def dic():
-#   for n in address_of.item():
-#     print(x)
-
-print(f"Is prime number, prime_number3 {prime_number3(13)}")
 
 
+print(f"Is prime number, prime_number3:  {prime_number3(13)}")
+
+print(f"Is prime number, prime_number3: {prime_number3(31)}")
