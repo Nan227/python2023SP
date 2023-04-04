@@ -25,4 +25,4 @@ print(f"Is prime number prime_number2: {prime_number2(9)}")
 
 print(f"Is prime number, prime_number3:  {prime_number3(13)}")
 
-print(f"Is prime number, prime_number3: {prime_number3(31)}")
+print(f"Is prime number, prime_number3: {prime_number3(10)}")
