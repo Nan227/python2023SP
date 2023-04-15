@@ -4,6 +4,19 @@ def total(values):
     t = t + x
   return t
 
+def running_mean(values):
+  
+  res = []
+  n = 1
+  sum =0
+  print(f"DBG: init res ={res}")
+  for x in values:
+    res.append((x + sum)/n )
+    n +=1
+    sum += x
+  
+  return res
+
 def is_even1(values):
   
   return[x %2 ==0 for x in values]
