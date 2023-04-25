@@ -9,7 +9,8 @@ d.strftime("%A, %B, %C")
 #datetime.
 #STR = polo
 class mydate:
-  def __init__(self, yr,mo,day):
+  def __init__(self, yr,mo,day, time):
     self.year = yr
     self.month = mo
     self.day =day
+    self.time = t
